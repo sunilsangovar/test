@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                     // Update the URL in the browser's address bar
                     if (updateUrl) {
-                        history.pushState({ page: pageName }, null, `${pageName}`);
+                        history.pushState({ page: pageName }, null, `#${pageName}`);
                     }
                 } else {
                     // Handle errors (e.g., page not found or network issues)
